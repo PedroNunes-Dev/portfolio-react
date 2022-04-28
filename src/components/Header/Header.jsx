@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import LogoPn from '../../assets/images/logoPN.png'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 import * as C from './headerStyled'
 
@@ -12,24 +13,27 @@ const Menu = () => {
         <C.Menu>
             <div className="container">
                 <C.Logo>
-                    <a href="" target="_blank">
+                    <Link to="/">
                         <img src={LogoPn} alt="" />
-                    </a>
+                    </Link>
                 </C.Logo>
                 <C.NavBar>
 
                     <ul>
                         <li>
-                            <a href="#home">Home</a>
+                            <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <a href="#sobre">Sobre</a>
+                            <Link to="/projects">Projetos</Link>
                         </li>
                         <li>
-                            <a href="#projetos">Projetos</a>
+                            <Link to="/git">GitHub</Link>
                         </li>
                         <li>
-                            <a href="#contato">Contato</a>
+                            <Link to="/about">Sobre</Link>
+                        </li>
+                        <li>
+                            <Link to="#contato">Contato</Link>
                         </li>
                     </ul>
 
@@ -54,16 +58,19 @@ const Menu = () => {
                             </div>
                             <div className="links">
                                 <li>
-                                    <a href="#home" onClick={() => setVisibility(false)}>Home</a>
+                                    <Link to="/" onClick={() => setVisibility(false)}>Home</Link>
                                 </li>
                                 <li>
-                                    <a href="#sobre" onClick={() => setVisibility(false)}>Sobre</a>
+                                    <Link to="/projects"  onClick={() => setVisibility(false)}>Projetos</Link>
                                 </li>
                                 <li>
-                                    <a href="#projetos"  onClick={() => setVisibility(false)}>Projetos</a>
+                                    <Link to="/git" onClick={() => setVisibility(false)}>GitHub</Link>
                                 </li>
                                 <li>
-                                    <a href="#contato"  onClick={() => setVisibility(false)}>Contato</a>
+                                    <Link to="/about"  onClick={() => setVisibility(false)}>Sobre</Link>
+                                </li>
+                                <li>
+                                    <Link to="#"  onClick={() => setVisibility(false)}>Contato</Link>
                                 </li>
                             </div>
                         </ul>
@@ -77,36 +84,3 @@ const Menu = () => {
 }
 
 export default Menu
-
-/*const Header = () => {
-
-    return(
-
-        <StyledHeader>
-            <div className="container">
-                <a href="" className="logo">
-                    <img src={LogoPn} alt="" />
-                </a>
-                <div>
-                    <ul className="menu" role="menu">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Projetos</a></li>
-                        <li><a href="">Contato</a></li>
-                    </ul>
-                </div>
-                <Toggle className="nav">
-                    <button className="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                </Toggle>
-            </div>
-        </StyledHeader>
-
-    )
-
-}
-
-export default Header;*/

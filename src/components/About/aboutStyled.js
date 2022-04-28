@@ -6,6 +6,7 @@ export const StyledAbout = styled.section`
     padding: 15px 0;
     display: flex;
     color: var(--text-gray);
+    height: calc(100vh - 70px);
 
     .about-txt
     {
@@ -18,8 +19,11 @@ export const StyledAbout = styled.section`
         color: var(--color-white);
     }
 
+   
     @media(max-width: 480px)
     {
+        height: auto;
+        
         .about-txt
         {
             font-size: 1.1rem;

@@ -42,7 +42,7 @@ ul{
         a{
             color: var(--text-gray) ;
             text-decoration: none;
-            font-weight: 700;
+            font-weight: 500;
             transition: all .2s;
             padding: 8px 10px;
             border-radius: 5px;
