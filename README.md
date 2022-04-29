@@ -19,10 +19,6 @@
     <h1> 🚧 Features</h1>
     <div>
         <input type="checkbox"/> 
-        <label>Adicionar Footer<label/>
-    </div>
-    <div>
-        <input type="checkbox"/> 
         <label>Adicionar página de contato<label/>
     </div>
     <div>

@@ -2,10 +2,11 @@ import styled from "styled-components";
 
 export const StyledHome = styled.section`
 
-    height: calc(100vh - 70px);
+    height: calc(100vh - 130px);
     background: var(--color-black);
     overflow: hidden;
     background: var(--color-black);
+
 
 `
 
@@ -51,6 +52,11 @@ export const HomeStyled = styled.main`
 
     @media(max-width: 480px)
     {
+        
+        .home-txt
+        {
+            align-items: center;
+        }
 
         .home-txt h2
         {
