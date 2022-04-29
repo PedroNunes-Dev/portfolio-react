@@ -7,7 +7,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 20px 0;
     background: linear-gradient(75deg, #536976, #292e49);
-    height: calc(100vh - 70px);
+    height: calc(100vh - 130px);
 
     @media(max-width: 480px)
     {
