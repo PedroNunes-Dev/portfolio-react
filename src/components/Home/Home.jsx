@@ -2,9 +2,36 @@ import React from "react";
 import { StyledHome, HomeStyled, BtnHome } from "./homeStyled";
 import { Link } from "react-router-dom";
 import PERFILOF from '../../assets/images/PERFILOF.png'
+import Typed from "typed.js";
 
 
 const Home = () => {
+
+    const el = React.useRef(null);
+	const typed = React.useRef(null);
+
+    React.useEffect(() => {
+        const options = {
+            strings: [
+            'Olá humanos!',
+            'Sou um <strong>desenvolvedor Web</strong>.',
+            'Estou em constante <strong>evoluçao</strong>.',
+            'Pronto para <strong>aprender</strong> e <strong>contribuir</strong>!'
+        ],
+        typeSpeed: 50,
+        backSpeed: 20,
+        loop: true,
+        };
+        
+        // elRef refers to the <span> rendered below
+        typed.current = new Typed(el.current, options);
+        
+        return () => {
+        // Make sure to destroy Typed instance during cleanup
+        // to prevent memory leaks
+        typed.current.destroy();
+        }
+    }, [])
 
     return(
 
@@ -15,7 +42,9 @@ const Home = () => {
                         <div className="col-md-6">
                             <div className="home-txt">
                                 <h2><span className="text-danger">P</span>edro <span className="text-danger">N</span>unes</h2>
-                                <p>Sou um desenvolvedor Web</p>
+                                <div className="type-wrap">
+                                    <span style={{ whiteSpace: 'pre'}} ref={el} />
+                                </div>
                                 <BtnHome>
                                     <a href="https://wa.me/qr/OZWPJVZZLJ2WG1" target="_blank">Saber mais</a>
                                     <Link to="/projects">Projetos</Link>

@@ -50,6 +50,12 @@ export const HomeStyled = styled.main`
         width: 420px;
     }
 
+    .type-wrap
+    {
+        
+        font-size: 1.5rem;
+    }
+
     @media(max-width: 480px)
     {
         
@@ -71,6 +77,11 @@ export const HomeStyled = styled.main`
         .cartoon img
         {
             width: 90%;
+        }
+
+        .type-wrap
+        {
+            font-size: 1rem;
         }
         
         
