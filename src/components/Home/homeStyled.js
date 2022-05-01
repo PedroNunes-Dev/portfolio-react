@@ -1,22 +1,28 @@
 import styled from "styled-components";
 
-export const StyledHome = styled.section`
+export const StyledHome = styled.main`
 
-    height: calc(100vh - 130px);
-    //background: var(--color-black);
+
     background: linear-gradient(175deg, var(--color-black), var(--color-black-ligth), var(--color-black));
     overflow: hidden;
 
+    @media(min-width: 1024px){
+        height: auto;
+    }
+
+    @media(min-width: 1280px){
+        height: calc(100vh - 130px);
+    }
 
 `
 
 export const HomeStyled = styled.main`
 
     color: var(--color-white);
-    width: 100%;
-    height: 100%;
+    
     display: flex;
     align-items: center;
+    padding: 40px;
 
     .home-txt
     {
@@ -47,7 +53,7 @@ export const HomeStyled = styled.main`
 
     .cartoon img
     {
-        width: 420px;
+        width: auto;
     }
 
     .type-wrap
@@ -121,6 +127,48 @@ export const BtnHome = styled.div`
         }
         
         
+    }
+
+`
+
+export const StyledTecnologies = styled.section`
+
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    
+    .title
+    {
+        color: var(--color-white);
+    }
+
+    section
+    {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .techIcons
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--color-white);
+        transition: all .3s;
+    }
+
+    .techIcons:hover, .icon:hover
+    {
+        color: #DC3545;
+    }
+
+    .icon
+    {
+        font-size: 5rem;
+        color: var(--color-white);
+        transition: all .3s;
     }
 
 `

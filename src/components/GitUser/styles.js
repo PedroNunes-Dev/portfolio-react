@@ -14,6 +14,15 @@ export const Container = styled.div`
         height: auto;
     }
 
+    @media(min-width: 1024px){
+        height: auto;
+    }
+
+    @media(min-width: 1280px){
+        height: calc(100vh - 130px);
+    }
+
+
     
 
 `

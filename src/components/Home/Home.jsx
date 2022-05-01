@@ -1,8 +1,9 @@
 import React from "react";
-import { StyledHome, HomeStyled, BtnHome } from "./homeStyled";
+import { StyledHome, HomeStyled, BtnHome, StyledTecnologies, StyledAbout } from "./homeStyled";
 import { Link } from "react-router-dom";
 import PERFILOF from '../../assets/images/PERFILOF.png'
 import Typed from "typed.js";
+import Techs from '../../data/Techs'
 
 
 const Home = () => {
@@ -34,7 +35,6 @@ const Home = () => {
     }, [])
 
     return(
-
         <StyledHome>
             <HomeStyled>
                 <div className="container">
@@ -60,8 +60,20 @@ const Home = () => {
                     </div>
                 </div>
             </HomeStyled>
+            <StyledTecnologies>
+                <div className="container">
+                    <h2 className="title">Tecnologias</h2>
+                    <section>
+                        {Techs.map((tech) => (
+                            <div className="techIcons" key={tech.text}>
+                                <div className="icon">{tech.Icon}</div>
+                                <p>{tech.text}</p>
+                            </div>
+                        ))}
+                    </section>
+                </div>
+            </StyledTecnologies>
         </StyledHome>
-
     )
 
 }

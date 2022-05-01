@@ -6,7 +6,7 @@ export const StyledAbout = styled.section`
     padding: 15px 0;
     display: flex;
     color: var(--text-gray);
-    height: calc(75vh - 130px);
+    height: calc(100vh - 130px);
     align-items: center;
 
     .about-txt
