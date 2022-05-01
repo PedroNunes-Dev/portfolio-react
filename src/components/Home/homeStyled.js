@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const StyledHome = styled.section`
 
     height: calc(100vh - 130px);
-    background: var(--color-black);
+    //background: var(--color-black);
+    background: linear-gradient(175deg, var(--color-black), var(--color-black-ligth), var(--color-black));
     overflow: hidden;
-    background: var(--color-black);
 
 
 `

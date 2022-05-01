@@ -22,6 +22,7 @@ color: var(--text-gray);
     margin: 0;
     list-style: none;
     font-size: 1.5rem;
+    padding: 0;
     
 }
 
@@ -49,6 +50,11 @@ color: var(--text-gray);
         flex-direction: column;
         justify-content: center;
         gap: 1rem;
+    }
+
+    .links-socials
+    {
+        align-items: center;;
     }
 }
 

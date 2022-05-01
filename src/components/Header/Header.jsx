@@ -21,19 +21,19 @@ const Menu = () => {
 
                     <ul>
                         <li>
-                            <Link to="/">Home</Link>
+                            <Link to="/" activeStyle>Home</Link>
                         </li>
                         <li>
-                            <Link to="/projects">Projetos</Link>
+                            <Link to="/projects" activeStyle>Projetos</Link>
                         </li>
                         <li>
-                            <Link to="/git">GitHub</Link>
+                            <Link to="/git" activeStyle>GitHub</Link>
                         </li>
                         <li>
-                            <Link to="/about">Sobre</Link>
+                            <Link to="/about" activeStyle>Sobre</Link>
                         </li>
                         <li>
-                            <Link to="#contato">Contato</Link>
+                            <Link to="#contato" activeStyle>Contato</Link>
                         </li>
                     </ul>
 

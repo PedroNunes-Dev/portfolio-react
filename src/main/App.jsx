@@ -7,6 +7,7 @@ import Routes from "./Routes";
 import Footer from "../components/Footer/Footer";
 
 export default props =>
+    
     <BrowserRouter>
         <Menu/>
         <Routes />

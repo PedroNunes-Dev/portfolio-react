@@ -6,6 +6,7 @@ export default createGlobalStyle`
     {
         --text-gray: #8d8d8d;
         --text-black: #181818;
+        --color-black-ligth: #434750;
         --color-white: #fff;
         --color-black: #181818;
         --color-black-light: #454545;

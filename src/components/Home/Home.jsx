@@ -13,7 +13,7 @@ const Home = () => {
     React.useEffect(() => {
         const options = {
             strings: [
-            'Olá humanos!',
+            'Olá humano!',
             'Sou um <strong>desenvolvedor Web</strong>.',
             'Estou em constante <strong>evoluçao</strong>.',
             'Pronto para <strong>aprender</strong> e <strong>contribuir</strong>!'
