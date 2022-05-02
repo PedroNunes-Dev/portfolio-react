@@ -1,8 +1,12 @@
 import styled from "styled-components"
+import estrelas from '../../assets/images/estrelas.png'
 
 export const StyledAbout = styled.section`
 
-    background: linear-gradient(155deg, var(--color-black-light) 0%, var(--color-black) 90%);
+    background-image: url(${estrelas}), linear-gradient(155deg, var(--color-black-light) 0%, var(--color-black) 90%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 15px 0;
     display: flex;
     color: var(--text-gray);

@@ -75,7 +75,7 @@ export default function GitUser(){
                             )
                         }
                         <span>Repositórios: {userGit.public_repos}+</span>
-                        <p>{errorMsg}</p>
+                        <p className="text-danger px-2">{errorMsg}</p>
                         
                         <GitBtnStyles>
                             <a href="https://github.com/PedroNunes-Dev" target="_blank" rel="noreferrer">View all repositories</a>

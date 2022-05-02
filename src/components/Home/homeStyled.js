@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
+import estrelas from '../../assets/images/estrelas.png'
+
 export const StyledHome = styled.main`
 
-
-    background: linear-gradient(175deg, var(--color-black), var(--color-black-ligth), var(--color-black));
+    background-image: url(${estrelas}), linear-gradient(175deg, var(--color-black), var(--color-black-ligth), var(--color-black));
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //background-color: linear-gradient(175deg, var(--color-black), var(--color-black-ligth), var(--color-black));
     overflow: hidden;
 
     @media(min-width: 1024px){
@@ -169,6 +174,19 @@ export const StyledTecnologies = styled.section`
         font-size: 5rem;
         color: var(--color-white);
         transition: all .3s;
+    }
+
+    @media(max-width: 480px)
+    {
+        .title
+        {
+            font-size: 2.5rem;
+        }
+        .icon
+        {
+            font-size: 4.2rem;
+        }
+        
     }
 
 `
