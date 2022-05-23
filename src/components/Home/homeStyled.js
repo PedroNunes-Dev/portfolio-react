@@ -115,12 +115,21 @@ export const BtnHome = styled.div`
         box-shadow: var(--shadow);
         margin: 20px 0;
         transition: all 0.3s;
+        animation: pulse 1500ms infinite;
     }
 
     a:hover
     {
         background: var(--color-white);
         color: var(--color-black);
+    }
+    @keyframes pulse{
+        0%{
+            box-shadow: #fff 0 0 0 0;
+        }
+        75%{
+            box-shadow: #ff69b400 0 0 0 8px;
+        }
     }
 
     @media(max-width: 480px)
