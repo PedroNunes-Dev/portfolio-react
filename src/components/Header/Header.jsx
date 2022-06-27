@@ -41,7 +41,9 @@ const Menu = () => {
                 <C.Toggle>
                     {!visibility === true &&
                          <a onClick={() => setVisibility(true)}>
+                            
                             <GiHamburgerMenu/>
+                            
                          </a>
 
                         // <button onClick={() => setVisibility(true)}>Menu</button>

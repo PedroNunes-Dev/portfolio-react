@@ -100,6 +100,7 @@ ul{
     height: 100%;
     position: fixed;
     z-index: 2;
+    padding: 0;
     
    
     .btn-close a{
@@ -168,8 +169,8 @@ ul{
         
     }
     .links{
+        height: 100vh;
         animation: Opacity 0.7s ;
-        margin-top: 130px;
         width: 100% ;
         display:flex ;
         flex-direction: column ;
