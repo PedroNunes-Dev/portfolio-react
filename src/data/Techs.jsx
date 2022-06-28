@@ -27,6 +27,11 @@ const data = [
         Icon: <FaIcons.FaReact/>
     },
     {
+        text: 'typescript',
+        Icon: <SiIcons.SiTypescript/>
+        
+    },
+    {
         text: 'Styled components',
         Icon: <SiIcons.SiStyledcomponents/>,
     },
