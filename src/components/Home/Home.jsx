@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import PERFILOF from '../../assets/images/PERFILOF.png'
 import Typed from "typed.js";
 import Techs from '../../data/Techs'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import {Carousel} from "react-responsive-carousel";
 
 
 const Home = () => {
@@ -63,14 +65,16 @@ const Home = () => {
             <StyledTecnologies>
                 <div className="container">
                     <h2 className="title">Tecnologias</h2>
-                    <section>
+                    <Carousel autoPlay infiniteLoop={true}>
                         {Techs.map((tech) => (
-                            <div className="techIcons" key={tech.text}>
-                                <div className="icon">{tech.Icon}</div>
-                                <p>{tech.text}</p>
-                            </div>
+                            <section>
+                                <div className="techIcons" key={tech.text}>
+                                    <div className="icon">{tech.Icon}</div>
+                                    <p>{tech.text}</p>
+                                </div>
+                            </section>
                         ))}
-                    </section>
+                    </Carousel>
                 </div>
             </StyledTecnologies>
         </StyledHome>
